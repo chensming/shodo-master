@@ -98,24 +98,24 @@ TheShodo.Shodo.Write.onLoadingComplete = function () {
 }
 
 TheShodo.Shodo.Write.playIntro = function () {
-    var videoE = $('#write-tools-movie')
-        //.bind('ended', function(e) { $('#write-tools').fadeIn(); })
-        .fadeIn()
-        .bind('timeupdate', function(e) {
-            if ($(this).prop('currentTime') > TheShodo.Shodo.Write.videoFadeOutTiming) {
-                $(this).unbind('timeupdate', arguments.callee);
+    // var videoE = $('#write-tools-movie')
+    //     //.bind('ended', function(e) { $('#write-tools').fadeIn(); })
+    //     .fadeIn()
+    //     .bind('timeupdate', function(e) {
+    //         if ($(this).prop('currentTime') > TheShodo.Shodo.Write.videoFadeOutTiming) {
+    //             $(this).unbind('timeupdate', arguments.callee);
                 
-                // skip intro at next time
-                Kazari.SessionStorage.setItem('TheShodo.Shodo.Write.skipIntro', true);
+    //             // skip intro at next time
+    //             Kazari.SessionStorage.setItem('TheShodo.Shodo.Write.skipIntro', true);
                 
-                // prepare
-                TheShodo.Shodo.Write.initialize();
-            }
-        })
-        .get(0)
-    ;
-    videoE.volume = 0;
-    videoE.play();
+    //             // prepare
+    //             TheShodo.Shodo.Write.initialize();
+    //         }
+    //     })
+    //     .get(0)
+    // ;
+    // videoE.volume = 0;
+    // videoE.play();
 }
 
 TheShodo.Shodo.Write.initialize = function () {
