@@ -5,10 +5,10 @@
 # theshodo.com | revived
 Forked Shodo calligraphy HTML5 application created by [b-architects](http://www.b-architects.com) for Microsoft; the original website is no longer available.
 
-## Demo
-An online demo is available here: https://cobysy.github.io/shodo/.
 
-It should work in most newer browsers.
+## change
+取消了开始播放视频，有时在线演示有点卡顿，并不需要
+更改了背景音乐，改为樱井美希的三玖, 个人很喜欢
 
 ### Keyboard shortcuts
 | command | description                    |
